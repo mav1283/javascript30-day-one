@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vanilla JS Drumkit</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/Day-1-DrumIcon.png">
+</head>
+<body>
+    <div id="music-maker">
+        <div id="display">
+            <h1 id="display_text"></h1>
+        </div>
+        <div id="pad-container">
+            <section class="pads">
+                <header class="padhead">
+                    <h2>Drumkit</h2>
+                </header>
+                <div id="drumkeys" class="keys">
+                    <div data-key="81" data-audio-name="kick" class="keypad">
+                        <kbd class="letter">q</kbd>
+                    </div>
+                    <div data-key="87" data-audio-name="snare" class="keypad">
+                        <kbd class="letter">w</kbd>
+                    </div>
+                    <div data-key="69" data-audio-name="hi-hat open" class="keypad">
+                        <kbd class="letter">e</kbd>
+                    </div>
+                    <div data-key="65" data-audio-name="hi-hat close" class="keypad">
+                        <kbd class="letter">a</kbd>
+                    </div>
+                    <div data-key="83" data-audio-name="tom-tom" class="keypad">
+                        <kbd class="letter">s</kbd>
+                    </div>
+                    <div data-key="68" data-audio-name="crash" class="keypad">
+                        <kbd class="letter">d</kbd>
+                    </div>
+                    <div data-key="90" data-audio-name="ride" class="keypad">
+                        <kbd class="letter">z</kbd>
+                    </div>
+                    <div data-key="88" data-audio-name="china" class="keypad">
+                        <kbd class="letter">x</kbd>
+                    </div>
+                    <div data-key="67" data-audio-name="cowbell" class="keypad">
+                        <kbd class="letter">c</kbd>                    
+                    </div>  
+                </div>
+            </section>
+            <section class="pads">
+                <header class="padhead">
+                    <h2>Synth / Voice</h2>
+                </header>
+                <div id="synthkeys" class="keys">
+                    <div data-key="85" data-audio-name="horn" class="keypad">
+                        <kbd class="letter">u</kbd>
+                    </div>
+                    <div data-key="73" data-audio-name="flute" class="keypad">
+                        <kbd class="letter">i</kbd>
+                    </div>
+                    <div data-key="79" data-audio-name="church organ" class="keypad">
+                        <kbd class="letter">o</kbd>
+                    </div>
+                    <div data-key="72" data-audio-name="saxophone" class="keypad">
+                        <kbd class="letter">h</kbd>
+                    </div>
+                    <div data-key="74" data-audio-name="acoustic guitar" class="keypad">
+                        <kbd class="letter">j</kbd>
+                    </div>
+                    <div data-key="75" data-audio-name="piano" class="keypad">
+                        <kbd class="letter">k</kbd>
+                    </div>
+                    <div data-key="66" data-audio-name="violin" class="keypad">
+                        <kbd class="letter">b</kbd>
+                    </div>
+                    <div data-key="78" data-audio-name="choir" class="keypad">
+                        <kbd class="letter">n</kbd>
+                    </div>
+                    <div data-key="77" data-audio-name="voice" class="keypad">
+                        <kbd class="letter">m</kbd>
+                    </div> 
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="copyright">Design and created by: Dani Paolo S. Dullano</div>
+    <!-- Drumpad Kit -->
+    <audio data-key="81" data-audio-name="kick" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532587165/fcc-drum-machine/kick-drums/kick-drum-7.mp3" class="audiofile"></audio>
+    <audio data-key="87" data-audio-name="snare" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532587362/fcc-drum-machine/snare-drums/snaredrum1.mp3" class="audiofile"></audio>
+    <audio data-key="69" data-audio-name="hi-hat open" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532587997/fcc-drum-machine/hi-hats/hihat1.mp3" class="audiofile"></audio>
+    <audio data-key="65" data-audio-name="hi-hat close" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532587997/fcc-drum-machine/hi-hats/hihat4.mp3" class="audiofile"></audio>
+    <audio data-key="83" data-audio-name="tom-tom" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532588185/fcc-drum-machine/tom-toms/tomtomdrum3.mp3" class="audiofile"></audio>
+    <audio data-key="68" data-audio-name="crash" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532587948/fcc-drum-machine/cymbals%202/cymbalcrash1.mp3" class="audiofile"></audio>
+    <audio data-key="90" data-audio-name="ride" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532582454/sample-swap/drums-and-single-hits/rides/RIDE_S_11.mp3" class="audiofile"></audio>
+    <audio data-key="88" data-audio-name="china" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532580120/sample-swap/drums-and-single-hits/china/big_china_cym.mp3" class="audiofile"></audio>
+    <audio data-key="67" data-audio-name="cowbell" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532587867/fcc-drum-machine/cowbells/cowbell1.mp3" class="audiofile"></audio>
+    <!-- Synthpad Kit -->
+    <audio data-key="85" data-audio-name="horn" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532674689/sample-swap/horn/horn-section-godown.mp3" class="audiofile"></audio>
+    <audio data-key="73" data-audio-name="flute" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532674456/sample-swap/flute/192_flute-madness.mp3" class="audiofile"></audio>
+    <audio data-key="79" data-audio-name="church organ" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532674666/sample-swap/piano/almost-the-doors-organ.mp3" class="audiofile"></audio>
+    <audio data-key="72" data-audio-name="saxophone" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532675116/sample-swap/sax/sax-squeal-tore-my-brains-out.mp3" class="audiofile"></audio>
+    <audio data-key="74" data-audio-name="acoustic guitar" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532674083/sample-swap/guitar/120_acoustic-guitar-picking1.mp3" class="audiofile"></audio>
+    <audio data-key="75" data-audio-name="piano" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532674667/sample-swap/piano/096_salsa-piano-1.mp3" class="audiofile"></audio>
+    <audio data-key="66" data-audio-name="violin" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532674483/sample-swap/violin/violin-loop-2.mp3" class="audiofile"></audio>
+    <audio data-key="78" data-audio-name="choir" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532674510/sample-swap/choir/Slavic-Choir_Eb_Aah.mp3" class="audiofile"></audio>
+    <audio data-key="77" data-audio-name="voice" src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532674533/sample-swap/voice/voice_woo.mp3" class="audiofile"></audio>
+
+    <script src="build/main.bundle.js"></script>
+</body>
+</html>
