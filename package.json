@@ -31,6 +31,7 @@
     "http-server": "^0.11.1"
   },
   "dependencies": {
-    "braces": "^3.0.2"
+    "braces": "^3.0.2",
+    "lodash": "^4.17.14"
   }
 }
