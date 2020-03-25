@@ -33,6 +33,7 @@
   "dependencies": {
     "braces": "^3.0.2",
     "lodash": "^4.17.14",
+    "minimist": "^1.2.5",
     "mixin-deep": "^2.0.1"
   }
 }
